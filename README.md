@@ -36,7 +36,7 @@
 Click below to deploy directly on Heroku:
 
 <p align="center">
-  <a href="https://heroku.com/deploy?template=https://github.com/babaji067/userbot">
+  <a href="https://heroku.com/deploy?template=https://github.com/reetsingh886/Userbot">
     <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku">
   </a>
 </p>
