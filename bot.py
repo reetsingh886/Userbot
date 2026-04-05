@@ -1,11 +1,16 @@
 import os
 import asyncio
+
+try:
+    asyncio.get_event_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
+
 from pyrogram import Client, filters
 from pyrogram.errors import PeerIdInvalid, UserDeactivatedBan, UserBannedInChannel
 from dotenv import load_dotenv
 
 load_dotenv()
-
 api_id = int(os.getenv("API_ID"))
 api_hash = os.getenv("API_HASH")
 session_string = os.getenv("SESSION_STRING")
